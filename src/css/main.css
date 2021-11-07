@@ -1,0 +1,822 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&family=Roboto:wght@300&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  color: #4c4d4d !important;
+}
+
+.display1 {
+  display: none;
+}
+
+.display2 {
+  display: block;
+}
+
+.section {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bg {
+  background: #111418 !important;
+}
+
+.nav-text-color a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-text-color a:hover {
+  color: #dc3545;
+}
+
+.folio-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #dc3545;
+}
+
+.folio-text:hover {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  background: #dc3545;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 50%;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+nav li.active > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+nav li.active a {
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  color: #dc3545 !important;
+}
+
+#sectionHome .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/images/bg-img-1.jpg") no-repeat center;
+  background-attachment: scroll;
+  background-size: auto;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#sectionHome .home .nameSection {
+  position: absolute;
+  z-index: 2;
+  top: 250px;
+  margin: auto 50px;
+}
+
+#sectionHome .home .nameSection .text1 p {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#sectionHome .home .nameSection .text2 p {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#sectionHome .home .nameSection .text3 p {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#sectionHome .home .nameSection .text3 p span {
+  color: #dc3545;
+}
+
+#sectionHome .home .nameSection .hire-button {
+  color: #ffffff;
+  background: #dc3545;
+  padding: 7px 42px;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#sectionHome .home .nameSection .hire-button:hover {
+  background: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+#sectionHome .home .scroll-down-arrow {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 36px;
+  text-align: center;
+  color: #fff !important;
+}
+
+#sectionHome .home .scroll-down-arrow .animated-down svg path {
+  position: relative;
+  animation: fadeInDown 1.5s infinite;
+  -webkit-animation: fadeInDown 1.5s infinite;
+  -moz-animation: fadeInDown 1.5s infinite;
+  -o-animation: fadeInDown 1.5s infinite;
+}
+
+#sectionHome .home .scroll-down-arrow svg path {
+  color: white;
+}
+
+#sectionAboutme .about-wrap .fade-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionAboutme .about-wrap .fade-text h2 {
+  color: #dee4de75;
+  font-size: calc(1.95rem + 8.4vw) !important;
+  font-weight: 600 !important;
+}
+
+#sectionAboutme .about-wrap .fade-text p {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343a40 !important;
+  font-size: 2.50rem !important;
+  font-weight: 600 !important;
+  width: 100%;
+  top: 31%;
+}
+
+#sectionAboutme .about-wrap .fade-text p .header-bottom-line {
+  position: absolute;
+  width: 80px;
+  border: 3px solid #dc3545;
+  background-color: #dc3545;
+  margin: auto !important;
+  top: 106%;
+  left: 45%;
+}
+
+#sectionAboutme .about-wrap .title {
+  font-size: 2.0rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.8rem;
+}
+
+#sectionAboutme .about-wrap .title span {
+  color: #dc3545;
+}
+
+#sectionAboutme .about-wrap p {
+  font-size: 1.1rem;
+  color: #4c4d4d;
+}
+
+#sectionAboutme .about-wrap .personal-info {
+  padding: 15px;
+  border-bottom: 1px solid #dee4de75;
+}
+
+#sectionAboutme .about-wrap .personal-info a {
+  color: #4c4d4d;
+}
+
+#sectionAboutme .about-wrap .cv-btn {
+  color: #ffffff;
+  background: #dc3545;
+  padding: 7px 42px;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#sectionAboutme .about-wrap .cv-btn:hover {
+  background: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card {
+  border: unset;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  padding: 50px 30px;
+  border: 1px solid #dee2e6;
+  border-bottom: 4px solid #dc3545;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card:hover {
+  -webkit-box-shadow: 0 0 10px 1px #00000038 !important;
+          box-shadow: 0 0 10px 1px #00000038 !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .card-icon {
+  font-size: 43px;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .count-text {
+  font-size: 39px;
+  font-weight: 600;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .count-text span {
+  padding: 10px 0px;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .count-title {
+  font-size: 19px;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-1 svg {
+  font-size: 23px;
+  position: relative;
+  top: -40%;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-2 svg {
+  font-size: 23px;
+  position: relative;
+  top: -52%;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-3 svg {
+  font-size: 23px;
+  position: relative;
+  top: -40%;
+}
+
+#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .user-icon svg {
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  padding: 0px 0px 10px;
+}
+
+#sectionWhatido {
+  background-color: #f8f9fa;
+}
+
+#sectionWhatido .whatido-wrap .fade-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionWhatido .whatido-wrap .fade-text h2 {
+  color: #dee4de75;
+  font-size: calc(1.95rem + 8.4vw) !important;
+  font-weight: 600 !important;
+}
+
+#sectionWhatido .whatido-wrap .fade-text p {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343a40 !important;
+  font-size: 2.50rem !important;
+  font-weight: 600 !important;
+  width: 100%;
+  top: 31%;
+}
+
+#sectionWhatido .whatido-wrap .fade-text p .header-bottom-line {
+  position: absolute;
+  width: 80px;
+  border: 3px solid #dc3545;
+  background-color: #dc3545;
+  margin: auto !important;
+  top: 106%;
+  left: 45%;
+}
+
+#sectionWhatido .whatido-wrap .service-icon {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #dc3545;
+  text-align: center;
+  border-radius: 50%;
+  padding: 19px;
+  -webkit-box-shadow: 0 .125rem .25rem #00000054 !important;
+          box-shadow: 0 .125rem .25rem #00000054 !important;
+  font-size: 29px;
+  color: #ffffff;
+}
+
+#sectionWhatido .whatido-wrap .service-icon:hover {
+  background-color: #ffffff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+#sectionWhatido .whatido-wrap .service-title {
+  margin-left: 91px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#sectionWhatido .whatido-wrap .service-discription {
+  margin-left: 91px;
+  text-align: justify;
+}
+
+#sectionResume .resume-wrap .fade-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionResume .resume-wrap .fade-text h2 {
+  color: #dee4de75;
+  font-size: calc(1.95rem + 8.4vw) !important;
+  font-weight: 600 !important;
+}
+
+#sectionResume .resume-wrap .fade-text p {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343a40 !important;
+  font-size: 2.50rem !important;
+  font-weight: 600 !important;
+  width: 100%;
+  top: 31%;
+}
+
+#sectionResume .resume-wrap .fade-text p .header-bottom-line {
+  position: absolute;
+  width: 80px;
+  border: 3px solid #dc3545;
+  background-color: #dc3545;
+  margin: auto !important;
+  top: 106%;
+  left: 46%;
+}
+
+#sectionResume .resume-wrap .card {
+  background-color: #f8f9fa;
+}
+
+#sectionResume .resume-wrap .card:hover {
+  -webkit-box-shadow: 0 0 10px 1px #00000038 !important;
+          box-shadow: 0 0 10px 1px #00000038 !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#sectionResume .resume-wrap .edu-title h4 {
+  font-weight: 700;
+}
+
+#sectionResume .resume-wrap .title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+#sectionResume .resume-wrap .year-pass {
+  margin-bottom: 17px;
+}
+
+#sectionResume .resume-wrap .year-pass span {
+  background-color: #dc3545;
+  width: 36%;
+  padding: 0px 9px;
+  border-radius: 3px;
+  color: white;
+}
+
+#sectionResume .resume-wrap .school-title h6 {
+  font-weight: 600;
+}
+
+#sectionResume .resume-wrap .expe-title h6 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#sectionResume .resume-wrap .skills-title p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#sectionResume .resume-wrap .progress {
+  border-radius: 0px;
+}
+
+#sectionResume .resume-wrap .progress .progress-bar {
+  background-color: #dc3545;
+}
+
+#sectionResume .resume-wrap .cv-btn {
+  color: #ffffff;
+  background: #dc3545;
+  padding: 7px 42px;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#sectionResume .resume-wrap .cv-btn:hover {
+  background: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+#sectionContact {
+  background-color: #f8f9fa;
+}
+
+#sectionContact .contact-wrap .fade-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionContact .contact-wrap .fade-text h2 {
+  color: #dee4de75;
+  font-size: calc(1.95rem + 8.4vw) !important;
+  font-weight: 600 !important;
+}
+
+#sectionContact .contact-wrap .fade-text p {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343a40 !important;
+  font-size: 2.50rem !important;
+  font-weight: 600 !important;
+  width: 100%;
+  top: 31%;
+}
+
+#sectionContact .contact-wrap .fade-text p .header-bottom-line {
+  position: absolute;
+  width: 80px;
+  border: 3px solid #dc3545;
+  background-color: #dc3545;
+  margin: auto !important;
+  top: 106%;
+  left: 45%;
+}
+
+#sectionContact .contact-wrap .contact-padding {
+  padding: 10px 0px;
+}
+
+#sectionContact .contact-wrap .contact-icon {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #dc3545;
+  text-align: center;
+  border-radius: 50%;
+  padding: 19px;
+  -webkit-box-shadow: 0 .125rem .25rem #00000054 !important;
+          box-shadow: 0 .125rem .25rem #00000054 !important;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#sectionContact .contact-wrap .contact-icon:hover {
+  background-color: #ffffff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+#sectionContact .contact-wrap .contact-details {
+  margin-left: 70px;
+  font-weight: 600;
+}
+
+#sectionContact .contact-wrap .contact-link {
+  margin-left: 20px;
+  font-weight: 600;
+  color: #4c4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sectionContact .contact-wrap .contact-link p {
+  margin-left: 20px;
+}
+
+#sectionContact .contact-wrap .contact-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.5rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #f8f9fa;
+  background-clip: padding-box;
+  border: unset;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#sectionContact .contact-wrap input:focus {
+  outline: 2px solid #dc3545;
+  border-radius: 0.25rem;
+}
+
+#sectionContact .contact-wrap .text-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #f8f9fa;
+  background-clip: padding-box;
+  border: unset;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#sectionContact .contact-wrap textarea:focus {
+  outline: 2px solid #dc3545;
+  border-radius: 0.25rem;
+}
+
+#sectionContact .contact-wrap .send-button {
+  color: #ffffff;
+  background: #dc3545;
+  padding: 7px 42px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+#sectionContact .contact-wrap .send-button:hover {
+  background: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+#sectionContact .contact-wrap .note span {
+  font-size: 14px;
+}
+
+#sectionContact .contact-wrap .social-icons {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .display1 {
+    display: block;
+  }
+  .display2 {
+    display: none;
+  }
+  .folio-text {
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 0px 0px 0px 6px;
+  }
+  #sidebarMenu {
+    text-align: left !important;
+    width: 100%;
+    height: 28%;
+    overflow-y: unset;
+    overflow: unset;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 38px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+  #sectionHome .home .nameSection {
+    position: relative;
+    z-index: 2;
+    top: 19%;
+    margin: 0 9px;
+  }
+  #sectionHome .home .nameSection .text1 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  #sectionHome .home .nameSection .text2 p {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  #sectionHome .home .nameSection .text3 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  #sectionHome .home .nameSection .text3 p span {
+    color: #dc3545;
+  }
+  #sectionHome .home .nameSection .scroll-down-arrow {
+    position: absolute;
+    z-index: 3;
+    bottom: 68px;
+    left: 50%;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 36px;
+    text-align: center;
+    color: #fff !important;
+    top: 149%;
+  }
+  #sectionAboutme .about-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw) !important;
+  }
+  #sectionAboutme .about-wrap .fade-text p {
+    top: 25px;
+    font-size: 1.30rem !important;
+  }
+  #sectionAboutme .about-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 75px;
+    left: 39%;
+  }
+  #sectionWhatido .whatido-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 12.7vw) !important;
+  }
+  #sectionWhatido .whatido-wrap .fade-text p {
+    top: 28px;
+    font-size: 1.30rem !important;
+  }
+  #sectionWhatido .whatido-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 75px;
+    left: 39%;
+  }
+  #sectionWhatido .respo-center {
+    text-align: center;
+  }
+  #sectionResume .resume-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw) !important;
+  }
+  #sectionResume .resume-wrap .fade-text p {
+    top: 24px;
+    font-size: 1.30rem !important;
+  }
+  #sectionResume .resume-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 75px;
+    left: 39%;
+  }
+  #sectionContact .contact-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw) !important;
+  }
+  #sectionContact .contact-wrap .fade-text p {
+    top: 26px;
+    font-size: 1.30rem !important;
+  }
+  #sectionContact .contact-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 75px;
+    left: 39%;
+  }
+  section footer .copy-text {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
