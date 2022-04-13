@@ -13,7 +13,7 @@ html {
 
 body {
   overflow-x: hidden;
-  color: #4c4d4d !important;
+  color: #4c4d4d;
 }
 
 .display1 {
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-bg {
-  background: #111418 !important;
+  background: #111418;
 }
 
 .nav-text-color a {
@@ -59,27 +59,27 @@ body {
 
 .scroll-up-btn {
   position: fixed;
-  height: 45px;
-  width: 45px;
+  height: 2.813rem;
+  width: 2.813rem;
   background: #dc3545;
-  right: 30px;
-  bottom: 10px;
+  right: 1.875rem;
+  bottom: 1.875rem;
   text-align: center;
-  line-height: 45px;
+  line-height: 2.813rem;
   color: #fff;
   z-index: 9999;
-  font-size: 30px;
+  font-size: 1.875rem;
   border-radius: 50%;
   border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .scroll-up-btn.show {
-  bottom: 30px;
+  bottom: 1.875rem;
   opacity: 1;
   pointer-events: auto;
 }
@@ -98,18 +98,18 @@ nav li.active > a {
 nav li.active a {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
-  color: #dc3545 !important;
+  color: #dc3545;
 }
 
 #sectionHome .home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../../images/bg-img-1.jpg") no-repeat center;
+  background: url("/images/bg-img-1.jpg") no-repeat center;
   background-attachment: scroll;
   background-size: auto;
   height: 100vh;
-  min-height: 500px;
+  min-height: 31.25rem;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -117,8 +117,8 @@ nav li.active a {
 #sectionHome .home .nameSection {
   position: absolute;
   z-index: 2;
-  top: 250px;
-  margin: auto 50px;
+  top: 15.625rem;
+  margin: auto 3.125rem;
 }
 
 #sectionHome .home .nameSection .text1 p {
@@ -147,9 +147,11 @@ nav li.active a {
   color: #ffffff;
   background: #dc3545;
   padding: 7px 42px;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   font-size: 25px;
   font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #sectionHome .home .nameSection .hire-button:hover {
@@ -161,15 +163,15 @@ nav li.active a {
 #sectionHome .home .scroll-down-arrow {
   position: absolute;
   z-index: 3;
-  bottom: 20px;
+  bottom: 1.25rem;
   left: 50%;
-  margin-left: -16px;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 36px;
+  margin-left: -1.625rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 2.25rem;
   text-align: center;
-  color: #fff !important;
+  color: #fff;
 }
 
 #sectionHome .home .scroll-down-arrow .animated-down svg path {
@@ -190,7 +192,7 @@ nav li.active a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -198,8 +200,8 @@ nav li.active a {
 
 #sectionAboutme .about-wrap .fade-text h2 {
   color: #dee4de75;
-  font-size: calc(1.95rem + 8.4vw) !important;
-  font-weight: 600 !important;
+  font-size: calc(1.95rem + 8.4vw);
+  font-weight: 600;
 }
 
 #sectionAboutme .about-wrap .fade-text p {
@@ -207,9 +209,9 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #343a40 !important;
-  font-size: 2.50rem !important;
-  font-weight: 600 !important;
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 600;
   width: 100%;
   top: 31%;
 }
@@ -219,14 +221,14 @@ nav li.active a {
   width: 80px;
   border: 3px solid #dc3545;
   background-color: #dc3545;
-  margin: auto !important;
+  margin: auto;
   top: 106%;
   left: 45%;
 }
 
 #sectionAboutme .about-wrap .title {
-  font-size: 2.0rem !important;
-  font-weight: 600 !important;
+  font-size: 2.0rem;
+  font-weight: 600;
   margin-bottom: 0.8rem;
 }
 
@@ -252,9 +254,11 @@ nav li.active a {
   color: #ffffff;
   background: #dc3545;
   padding: 7px 42px;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   font-size: 25px;
   font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #sectionAboutme .about-wrap .cv-btn:hover {
@@ -263,59 +267,59 @@ nav li.active a {
   border: 1px solid #dc3545;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card {
+#sectionAboutme .about-wrap .card-count .card {
   border: unset;
   border-radius: 8px;
   cursor: pointer;
   position: relative;
-  padding: 50px 30px;
+  padding: 3.125rem 1.875rem;
   border: 1px solid #dee2e6;
   border-bottom: 4px solid #dc3545;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card:hover {
-  -webkit-box-shadow: 0 0 10px 1px #00000038 !important;
-          box-shadow: 0 0 10px 1px #00000038 !important;
+#sectionAboutme .about-wrap .card-count .card:hover {
+  -webkit-box-shadow: 0 0 10px 1px #00000038;
+          box-shadow: 0 0 10px 1px #00000038;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .card-icon {
+#sectionAboutme .about-wrap .card-count .card .card-icon {
   font-size: 43px;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .count-text {
+#sectionAboutme .about-wrap .card-count .card .count-text {
   font-size: 39px;
   font-weight: 600;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .count-text span {
+#sectionAboutme .about-wrap .card-count .card .count-text span {
   padding: 10px 0px;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .count-title {
+#sectionAboutme .about-wrap .card-count .card .count-title {
   font-size: 19px;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-1 svg {
+#sectionAboutme .about-wrap .card-count .card .icon-setting .star-1 svg {
   font-size: 23px;
   position: relative;
   top: -40%;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-2 svg {
+#sectionAboutme .about-wrap .card-count .card .icon-setting .star-2 svg {
   font-size: 23px;
   position: relative;
   top: -52%;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .star-3 svg {
+#sectionAboutme .about-wrap .card-count .card .icon-setting .star-3 svg {
   font-size: 23px;
   position: relative;
   top: -40%;
 }
 
-#sectionAboutme .about-wrap .card-count .card-deck .card .icon-setting .user-icon svg {
+#sectionAboutme .about-wrap .card-count .card .icon-setting .user-icon svg {
   font-size: 40px;
   position: absolute;
   top: 30%;
@@ -333,7 +337,7 @@ nav li.active a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -341,8 +345,8 @@ nav li.active a {
 
 #sectionWhatido .whatido-wrap .fade-text h2 {
   color: #dee4de75;
-  font-size: calc(1.95rem + 8.4vw) !important;
-  font-weight: 600 !important;
+  font-size: calc(1.95rem + 8.4vw);
+  font-weight: 600;
 }
 
 #sectionWhatido .whatido-wrap .fade-text p {
@@ -350,9 +354,9 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #343a40 !important;
-  font-size: 2.50rem !important;
-  font-weight: 600 !important;
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 600;
   width: 100%;
   top: 31%;
 }
@@ -362,7 +366,7 @@ nav li.active a {
   width: 80px;
   border: 3px solid #dc3545;
   background-color: #dc3545;
-  margin: auto !important;
+  margin: auto;
   top: 106%;
   left: 45%;
 }
@@ -378,16 +382,18 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70px;
-  height: 70px;
-  background-color: #dc3545;
   text-align: center;
+  font-size: 1.813rem;
+  width: 4.375rem;
+  height: 4.375rem;
+  background-color: #dc3545;
   border-radius: 50%;
-  padding: 19px;
-  -webkit-box-shadow: 0 .125rem .25rem #00000054 !important;
-          box-shadow: 0 .125rem .25rem #00000054 !important;
-  font-size: 29px;
+  padding: 1.188rem;
+  -webkit-box-shadow: 0 .125rem .25rem #00000054;
+          box-shadow: 0 .125rem .25rem #00000054;
   color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #sectionWhatido .whatido-wrap .service-icon:hover {
@@ -413,7 +419,7 @@ nav li.active a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -421,8 +427,8 @@ nav li.active a {
 
 #sectionResume .resume-wrap .fade-text h2 {
   color: #dee4de75;
-  font-size: calc(1.95rem + 8.4vw) !important;
-  font-weight: 600 !important;
+  font-size: calc(1.95rem + 8.4vw);
+  font-weight: 600;
 }
 
 #sectionResume .resume-wrap .fade-text p {
@@ -430,9 +436,9 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #343a40 !important;
-  font-size: 2.50rem !important;
-  font-weight: 600 !important;
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 600;
   width: 100%;
   top: 31%;
 }
@@ -442,7 +448,7 @@ nav li.active a {
   width: 80px;
   border: 3px solid #dc3545;
   background-color: #dc3545;
-  margin: auto !important;
+  margin: auto;
   top: 106%;
   left: 46%;
 }
@@ -452,8 +458,8 @@ nav li.active a {
 }
 
 #sectionResume .resume-wrap .card:hover {
-  -webkit-box-shadow: 0 0 10px 1px #00000038 !important;
-          box-shadow: 0 0 10px 1px #00000038 !important;
+  -webkit-box-shadow: 0 0 10px 1px #00000038;
+          box-shadow: 0 0 10px 1px #00000038;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -507,9 +513,11 @@ nav li.active a {
   color: #ffffff;
   background: #dc3545;
   padding: 7px 42px;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   font-size: 25px;
   font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #sectionResume .resume-wrap .cv-btn:hover {
@@ -528,7 +536,7 @@ nav li.active a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -536,8 +544,8 @@ nav li.active a {
 
 #sectionContact .contact-wrap .fade-text h2 {
   color: #dee4de75;
-  font-size: calc(1.95rem + 8.4vw) !important;
-  font-weight: 600 !important;
+  font-size: calc(1.95rem + 8.4vw);
+  font-weight: 600;
 }
 
 #sectionContact .contact-wrap .fade-text p {
@@ -545,9 +553,9 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #343a40 !important;
-  font-size: 2.50rem !important;
-  font-weight: 600 !important;
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 600;
   width: 100%;
   top: 31%;
 }
@@ -557,7 +565,7 @@ nav li.active a {
   width: 80px;
   border: 3px solid #dc3545;
   background-color: #dc3545;
-  margin: auto !important;
+  margin: auto;
   top: 106%;
   left: 45%;
 }
@@ -577,16 +585,17 @@ nav li.active a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background-color: #dc3545;
-  text-align: center;
   border-radius: 50%;
-  padding: 19px;
-  -webkit-box-shadow: 0 .125rem .25rem #00000054 !important;
-          box-shadow: 0 .125rem .25rem #00000054 !important;
+  padding: 1.188rem;
+  -webkit-box-shadow: 0 .125rem .25rem #00000054;
+          box-shadow: 0 .125rem .25rem #00000054;
   color: #ffffff;
-  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 1.25rem;
 }
 
 #sectionContact .contact-wrap .contact-icon:hover {
@@ -596,12 +605,12 @@ nav li.active a {
 }
 
 #sectionContact .contact-wrap .contact-details {
-  margin-left: 70px;
+  margin-left: 4.375rem;
   font-weight: 600;
 }
 
 #sectionContact .contact-wrap .contact-link {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   font-weight: 600;
   color: #4c4d4d;
   display: -webkit-box;
@@ -610,7 +619,7 @@ nav li.active a {
 }
 
 #sectionContact .contact-wrap .contact-link p {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 #sectionContact .contact-wrap .contact-form-control {
@@ -633,7 +642,7 @@ nav li.active a {
 
 #sectionContact .contact-wrap input:focus {
   outline: 2px solid #dc3545;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 }
 
 #sectionContact .contact-wrap .text-form-control {
@@ -655,15 +664,19 @@ nav li.active a {
 
 #sectionContact .contact-wrap textarea:focus {
   outline: 2px solid #dc3545;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 }
 
 #sectionContact .contact-wrap .send-button {
   color: #ffffff;
   background: #dc3545;
   padding: 7px 42px;
-  border-radius: 30px;
+  border-radius: 1.875rem;
+  font-size: 25px;
   font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 1rem;
 }
 
 #sectionContact .contact-wrap .send-button:hover {
@@ -677,7 +690,7 @@ nav li.active a {
 }
 
 #sectionContact .contact-wrap .social-icons {
-  padding-top: 20px;
+  padding-top: 0.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,7 +709,7 @@ nav li.active a {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
@@ -712,19 +725,19 @@ nav li.active a {
     padding: 0px 0px 0px 6px;
   }
   #sidebarMenu {
-    text-align: left !important;
+    text-align: left;
     width: 100%;
     height: 28%;
     overflow-y: unset;
     overflow: unset;
   }
   .scroll-up-btn {
-    right: 15px;
-    bottom: 15px;
-    height: 38px;
-    width: 38px;
-    font-size: 23px;
-    line-height: 38px;
+    right: 0.938rem;
+    bottom: 0.938rem;
+    height: 2.375rem;
+    width: 2.375rem;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
   }
   #sectionHome .home .nameSection {
     position: relative;
@@ -753,35 +766,35 @@ nav li.active a {
   #sectionHome .home .nameSection .scroll-down-arrow {
     position: absolute;
     z-index: 3;
-    bottom: 68px;
+    bottom: 4.25rem;
     left: 50%;
-    margin-left: -16px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 36px;
+    margin-left: -1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2.25rem;
     text-align: center;
-    color: #fff !important;
+    color: #fff;
     top: 149%;
   }
   #sectionAboutme .about-wrap .fade-text h2 {
-    font-size: calc(1.5rem + 11.7vw) !important;
+    font-size: calc(1.5rem + 11.7vw);
   }
   #sectionAboutme .about-wrap .fade-text p {
-    top: 25px;
-    font-size: 1.30rem !important;
+    top: 26%;
+    font-size: 1.3rem;
   }
   #sectionAboutme .about-wrap .fade-text p .header-bottom-line {
     border: 2px solid #dc3545;
-    width: 75px;
+    width: 4.688rem;
     left: 39%;
   }
   #sectionWhatido .whatido-wrap .fade-text h2 {
-    font-size: calc(1.5rem + 12.7vw) !important;
+    font-size: calc(1.5rem + 11.7vw);
   }
   #sectionWhatido .whatido-wrap .fade-text p {
-    top: 28px;
-    font-size: 1.30rem !important;
+    top: 26%;
+    font-size: 1.3rem;
   }
   #sectionWhatido .whatido-wrap .fade-text p .header-bottom-line {
     border: 2px solid #dc3545;
@@ -792,28 +805,149 @@ nav li.active a {
     text-align: center;
   }
   #sectionResume .resume-wrap .fade-text h2 {
-    font-size: calc(1.5rem + 11.7vw) !important;
+    font-size: calc(1.5rem + 11.7vw);
   }
   #sectionResume .resume-wrap .fade-text p {
-    top: 24px;
-    font-size: 1.30rem !important;
+    top: 26%;
+    font-size: 1.3rem;
   }
   #sectionResume .resume-wrap .fade-text p .header-bottom-line {
     border: 2px solid #dc3545;
-    width: 75px;
+    width: 4.688rem;
     left: 39%;
   }
   #sectionContact .contact-wrap .fade-text h2 {
-    font-size: calc(1.5rem + 11.7vw) !important;
+    font-size: calc(1.5rem + 11.7vw);
   }
   #sectionContact .contact-wrap .fade-text p {
-    top: 26px;
-    font-size: 1.30rem !important;
+    top: 26%;
+    font-size: 1.3rem;
   }
   #sectionContact .contact-wrap .fade-text p .header-bottom-line {
     border: 2px solid #dc3545;
-    width: 75px;
+    width: 4.688rem;
     left: 39%;
+  }
+  section footer .copy-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .folio-text {
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 0px 0px 0px 6px;
+  }
+  #sidebarMenu {
+    text-align: left;
+    width: 100%;
+    height: 28%;
+    overflow-y: unset;
+    overflow: unset;
+  }
+  .scroll-up-btn {
+    right: 0.938rem;
+    bottom: 0.938rem;
+    height: 2.375rem;
+    width: 2.375rem;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+  #sectionHome .home .nameSection {
+    position: relative;
+    z-index: 2;
+    top: 19%;
+    margin: 0 9px;
+  }
+  #sectionHome .home .nameSection .text1 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  #sectionHome .home .nameSection .text2 p {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  #sectionHome .home .nameSection .text3 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  #sectionHome .home .nameSection .text3 p span {
+    color: #dc3545;
+  }
+  #sectionHome .home .nameSection .scroll-down-arrow {
+    position: absolute;
+    z-index: 3;
+    bottom: 4.25rem;
+    left: 50%;
+    margin-left: -1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2.25rem;
+    text-align: center;
+    color: #fff;
+    top: 149%;
+  }
+  #sectionAboutme .about-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw);
+  }
+  #sectionAboutme .about-wrap .fade-text p {
+    font-size: 1.8rem;
+  }
+  #sectionAboutme .about-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 4.688rem;
+    left: 45%;
+  }
+  #sectionAboutme .about-wrap .card-count .card .icon-setting .user-icon svg {
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 46.5%;
+    padding: 0px 0px 10px;
+  }
+  #sectionWhatido .whatido-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw);
+  }
+  #sectionWhatido .whatido-wrap .fade-text p {
+    font-size: 1.8rem;
+  }
+  #sectionWhatido .whatido-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 75px;
+    left: 45%;
+  }
+  #sectionWhatido .respo-center {
+    text-align: center;
+  }
+  #sectionResume .resume-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw);
+  }
+  #sectionResume .resume-wrap .fade-text p {
+    font-size: 1.8rem;
+  }
+  #sectionResume .resume-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 4.688rem;
+    left: 45%;
+  }
+  #sectionContact .contact-wrap .fade-text h2 {
+    font-size: calc(1.5rem + 11.7vw);
+  }
+  #sectionContact .contact-wrap .fade-text p {
+    font-size: 1.8rem;
+  }
+  #sectionContact .contact-wrap .fade-text p .header-bottom-line {
+    border: 2px solid #dc3545;
+    width: 4.688rem;
+    left: 45%;
   }
   section footer .copy-text {
     text-align: left;

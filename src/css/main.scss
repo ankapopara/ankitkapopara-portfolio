@@ -1,13 +1,54 @@
-$bg-sidemenu:#111418  !important;
-$bg-primary: #f8f9fa;
-$primary-text: #dc3545;
-$secprimary-text: #ffffff;
-$fade_text: #dee4de75;
-$header-text-dark: #343a40 !important;
-$text-grey: #4c4d4d;
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
 
+$bg-sidemenu:#111418 ;
+$bg-primary: #f8f9fa;
+$primary-text: #dc3545;
+$primary-color: #dc3545;
+$secprimary-text: #ffffff;
+$fade_text: #dee4de75;
+$header-text-dark: #343a40;
+$text-grey: #4c4d4d;
+
+$sec-heading-size: calc(1.95rem + 8.4vw);
+$sec-para-size: 2.50rem;
+
+$sm-sec-heading-size: calc(1.5rem + 11.7vw);
+$sm-sec-para-size: 1.30rem;
+
+$md-sec-para-size: 1.80rem;
+
+@mixin main-btn {
+    color: $secprimary-text;
+    background: $primary-text;
+    padding: 7px 42px;
+    border-radius: 1.875rem;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.4s;
+
+    &:hover
+    {
+        background: transparent;
+        color: $primary-text;
+        border: 1px solid $primary-color;
+    }
+}
+
+@mixin icon-color-hover {
+    background-color: $primary-text;
+    border-radius: 50%;
+    padding: 1.188rem;
+    box-shadow: 0 .125rem .25rem #00000054;
+    color: #ffffff;
+    transition: 0.4s;
+
+    &:hover
+    {
+        background-color: #ffffff;
+        border: 1px solid $primary-text;
+        color: $primary-text;
+    }
+}
 
 *
 {
@@ -23,7 +64,7 @@ html {
 
 body{
     overflow-x: hidden;
-    color: $text-grey !important;
+    color: $text-grey;
 }
 
 .display1
@@ -78,32 +119,34 @@ body{
 
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
-    width: 45px;
-    background: #dc3545;
-    right: 30px;
-    bottom: 10px;
+    height: 2.813rem;
+    width: 2.813rem;
+    background: $primary-color;
+    right: 1.875rem;
+    bottom: 1.875rem;
     text-align: center;
-    line-height: 45px;
+    line-height: 2.813rem;
     color: #fff;
     z-index: 9999;
-    font-size: 30px;
+    font-size: 1.875rem;
     border-radius: 50%;
     border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: 0.4s;
 }
+
 .scroll-up-btn.show{
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
     pointer-events: auto;
 }
+
 .scroll-up-btn:hover{
     background-color: #ffffff;
-    border: 1px solid #dc3545;
-    color:#dc3545;
+    border: 1px solid $primary-color;
+    color:$primary-color;
 }
 
 nav li.active > a {
@@ -114,7 +157,7 @@ nav li.active > a {
 nav li.active a
 {
     transition: all 0.3 ease;
-    color: #dc3545 !important;
+    color: $primary-color;
 }
 
 
@@ -127,7 +170,7 @@ nav li.active a
         background-attachment: scroll;
         background-size: auto;
         height: 100vh;
-        min-height: 500px;
+        min-height: 31.25rem;
         background-size: cover;
         background-attachment: fixed;
 
@@ -135,8 +178,8 @@ nav li.active a
         {
             position: absolute;
             z-index: 2;
-            top: 250px;
-            margin: auto 50px;
+            top: 15.625rem;
+            margin: auto 3.125rem;
 
             .text1 p
             {
@@ -166,19 +209,7 @@ nav li.active a
 
             .hire-button
             {
-                color: $secprimary-text;
-                background: $primary-text;
-                padding: 7px 42px;
-                border-radius: 30px;
-                font-size: 25px;
-                font-weight: 600;
-            }
-
-            .hire-button:hover
-            {
-                background: transparent;
-                color: $primary-text;
-                border: 1px solid #dc3545;
+                @include main-btn;
             }
 
         }
@@ -186,15 +217,15 @@ nav li.active a
         .scroll-down-arrow {
             position: absolute;
             z-index: 3;
-            bottom: 20px;
+            bottom: 1.25rem;
             left: 50%;
-            margin-left: -16px;
-            width: 32px;
-            height: 32px;
-            line-height: 32px;
-            font-size: 36px;
+            margin-left: -1.625rem;
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            font-size: 2.25rem;
             text-align: center;
-            color: #fff !important;
+            color: #fff;
 
             .animated-down svg path {
                 position: relative;
@@ -223,14 +254,14 @@ nav li.active a
             position: relative;
             display: flex;
             text-align: center;
-            margin-bottom: 3rem !important;
+            margin-bottom: 3rem;
             justify-content: center;
             
             h2 
             {
                 color: $fade_text;
-                font-size: calc(1.95rem + 8.4vw) !important;
-                font-weight: 600 !important;
+                font-size: $sec-heading-size;
+                font-weight: 600;
             }
 
             p 
@@ -238,8 +269,8 @@ nav li.active a
                 position: absolute;
                 justify-content: center;
                 color: $header-text-dark;
-                font-size: 2.50rem !important;
-                font-weight: 600 !important;
+                font-size: $sec-para-size;
+                font-weight: 600;
                 width: 100%;
                 top: 31%;
 
@@ -249,7 +280,7 @@ nav li.active a
                     width: 80px;
                     border: 3px solid $primary-text;
                     background-color: $primary-text;
-                    margin: auto !important;
+                    margin: auto;
                     top: 106%;
                     left: 45%;
                 }
@@ -258,8 +289,8 @@ nav li.active a
 
         .title
         {
-            font-size: 2.0rem !important;
-            font-weight: 600 !important;
+            font-size: 2.0rem;
+            font-weight: 600;
             margin-bottom: 0.8rem;
 
             span 
@@ -279,46 +310,32 @@ nav li.active a
             padding: 15px;
             border-bottom:  1px solid #dee4de75;
 
-	    a
-	    {
-		color: #4c4d4d;
-	    }	    
+            a
+            {
+            color: #4c4d4d;
+            }	    
         }
 
         .cv-btn
         {
-            color: $secprimary-text;
-            background: $primary-text;
-            padding: 7px 42px;
-            border-radius: 30px;
-            font-size: 25px;
-            font-weight: 600;
-
-            &:hover
-            {
-                background: transparent;
-                color: $primary-text;
-                border: 1px solid #dc3545;
-            }
+            @include main-btn;
         }
 
         .card-count
         {
-            .card-deck
-            {
-                .card
+              .card
                 {
                     border: unset;
                     border-radius: 8px;
                     cursor: pointer;
                     position: relative;
-                    padding: 50px 30px;
+                    padding:3.125rem 1.875rem;
                     border: 1px solid #dee2e6;
-                    border-bottom: 4px solid #dc3545;
+                    border-bottom: 4px solid $primary-color;
 
                     &:hover
                     {
-                        box-shadow: 0 0 10px 1px #00000038 !important;
+                        box-shadow: 0 0 10px 1px #00000038;
                         transition: all 0.2s ease-in-out;
                     }
                     
@@ -392,7 +409,6 @@ nav li.active a
                     }
 
                 }
-            }
         }
         
     }
@@ -410,14 +426,14 @@ nav li.active a
             position: relative;
             display: flex;
             text-align: center;
-            margin-bottom: 3rem !important;
+            margin-bottom: 3rem;
             justify-content: center;
             
             h2 
             {
                 color: $fade_text;
-                font-size: calc(1.95rem + 8.4vw) !important;
-                font-weight: 600 !important;
+                font-size: $sec-heading-size;
+                font-weight: 600;
             }
 
             p 
@@ -425,8 +441,8 @@ nav li.active a
                 position: absolute;
                 justify-content: center;
                 color: $header-text-dark;
-                font-size: 2.50rem !important;
-                font-weight: 600 !important;
+                font-size: $sec-para-size;
+                font-weight: 600;
                 width: 100%;
                 top: 31%;
 
@@ -436,7 +452,7 @@ nav li.active a
                     width: 80px;
                     border: 3px solid $primary-text;
                     background-color: $primary-text;
-                    margin: auto !important;
+                    margin: auto;
                     top: 106%;
                     left: 45%;
                 }
@@ -449,23 +465,11 @@ nav li.active a
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 70px;
-            height: 70px;
-            background-color: $primary-text;
             text-align: center;
-            border-radius: 50%;
-            padding: 19px;
-            box-shadow: 0 .125rem .25rem #00000054 !important;
-            font-size: 29px;
-            color: #ffffff;
-
-
-            &:hover
-            {
-                background-color: #ffffff;
-                border: 1px solid #dc3545;
-                color: #dc3545;
-            }
+            font-size: 1.813rem;
+            width: 4.375rem;
+            height: 4.375rem;
+            @include icon-color-hover;
         }
 
         .service-title
@@ -492,14 +496,14 @@ nav li.active a
             position: relative;
             display: flex;
             text-align: center;
-            margin-bottom: 3rem !important;
+            margin-bottom: 3rem;
             justify-content: center;
             
             h2 
             {
                 color: $fade_text;
-                font-size: calc(1.95rem + 8.4vw) !important;
-                font-weight: 600 !important;
+                font-size: $sec-heading-size;
+                font-weight: 600;
             }
 
             p 
@@ -507,8 +511,8 @@ nav li.active a
                 position: absolute;
                 justify-content: center;
                 color: $header-text-dark;
-                font-size: 2.50rem !important;
-                font-weight: 600 !important;
+                font-size: $sec-para-size;
+                font-weight: 600;
                 width: 100%;
                 top: 31%;
 
@@ -518,7 +522,7 @@ nav li.active a
                     width: 80px;
                     border: 3px solid $primary-text;
                     background-color: $primary-text;
-                    margin: auto !important;
+                    margin: auto;
                     top: 106%;
                     left: 46%;
                 }
@@ -531,7 +535,7 @@ nav li.active a
 
             &:hover
             {
-                box-shadow: 0 0 10px 1px #00000038 !important;
+                box-shadow: 0 0 10px 1px #00000038;
                 transition: all 0.2s ease-in-out;
             }
         }
@@ -560,7 +564,7 @@ nav li.active a
 
             span 
             {
-                background-color: #dc3545;
+                background-color: $primary-color;
                 width: 36%;
                 padding: 0px 9px;
                 border-radius: 3px;
@@ -598,25 +602,13 @@ nav li.active a
             border-radius: 0px;
 
             .progress-bar{
-                background-color: #dc3545
+                background-color: $primary-color
             }
         }
 
         .cv-btn
         {
-            color: $secprimary-text;
-            background: $primary-text;
-            padding: 7px 42px;
-            border-radius: 30px;
-            font-size: 25px;
-            font-weight: 600;
-
-            &:hover
-            {
-                background: transparent;
-                color: $primary-text;
-                border: 1px solid #dc3545;
-            }
+            @include main-btn;
         }
 
     }
@@ -633,14 +625,14 @@ nav li.active a
             position: relative;
             display: flex;
             text-align: center;
-            margin-bottom: 3rem !important;
+            margin-bottom: 3rem;
             justify-content: center;
             
             h2 
             {
                 color: $fade_text;
-                font-size: calc(1.95rem + 8.4vw) !important;
-                font-weight: 600 !important;
+                font-size: $sec-heading-size;
+                font-weight: 600;
             }
 
             p 
@@ -648,8 +640,8 @@ nav li.active a
                 position: absolute;
                 justify-content: center;
                 color: $header-text-dark;
-                font-size: 2.50rem !important;
-                font-weight: 600 !important;
+                font-size: $sec-para-size;
+                font-weight: 600;
                 width: 100%;
                 top: 31%;
 
@@ -659,7 +651,7 @@ nav li.active a
                     width: 80px;
                     border: 3px solid $primary-text;
                     background-color: $primary-text;
-                    margin: auto !important;
+                    margin: auto;
                     top: 106%;
                     left: 45%;
                 }
@@ -677,41 +669,28 @@ nav li.active a
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
-            background-color: $primary-text;
-            text-align: center;
-            border-radius: 50%;
-            padding: 19px;
-            box-shadow: 0 .125rem .25rem #00000054 !important;
-            color: #ffffff;
-            font-size: 20px;
-
-            &:hover
-            {
-                background-color: #ffffff;
-                border: 1px solid #dc3545;
-                color: #dc3545;
-                
-            }
+            width:3.125rem;
+            height:3.125rem;
+            @include icon-color-hover;
+            font-size: 1.25rem;;
         }
 
         .contact-details
         {
-                margin-left: 70px;
+                margin-left: 4.375rem;
                 font-weight: 600;
         }
 
         .contact-link
         {
-            margin-left: 20px;
+            margin-left: 1.25rem;
             font-weight: 600;
             color: #4c4d4d;
             display: flex;
 
             p 
             {
-                margin-left: 20px;
+                margin-left: 1.25rem;
             }
             
         }
@@ -728,7 +707,6 @@ nav li.active a
             background-color: #f8f9fa;
             background-clip: padding-box;
             border: unset;
-            //border-radius: 0.25rem;
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
 
@@ -736,8 +714,8 @@ nav li.active a
         {
             &:focus
             {
-                outline: 2px solid #dc3545;
-                border-radius: 0.25rem;
+                outline: 2px solid $primary-color;
+                border-radius: 0rem;
             }
         }
 
@@ -752,35 +730,22 @@ nav li.active a
             background-color: #f8f9fa;
             background-clip: padding-box;
             border: unset;
-            // border-radius: 0.25rem;
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-            
         }
 
         textarea
         {
             &:focus
             {
-                outline: 2px solid #dc3545;
-                border-radius: 0.25rem;
+                outline: 2px solid $primary-color;
+                border-radius: 0rem;
             }
         }
 
         .send-button
         {
-            color: $secprimary-text;
-            background: $primary-text;
-            padding: 7px 42px;
-            border-radius: 30px;
-            font-weight: 600;
-
-            &:hover
-            {
-                background: transparent;
-                color: $primary-text;
-                border: 1px solid #dc3545;
-            }
+            @include main-btn;
+            font-size: 1rem;
         }
 
         .note
@@ -792,7 +757,7 @@ nav li.active a
         }
 
         .social-icons 
-            {   padding-top: 20px;
+            {   padding-top: 0.875rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
@@ -813,15 +778,12 @@ nav li.active a
 
 
 
-@media (max-width:  768px )
+@media (min-width: 320px) and (max-width: 480px)
 {
     body{
         overflow-x: hidden;
     }
     
-    .section {
-        // padding: 3.5rem 0;
-    }
 
     .display1
     {
@@ -842,7 +804,7 @@ nav li.active a
 
     #sidebarMenu
     {
-        text-align: left !important;
+        text-align: left;
         width: 100%;
         height: 28%;
         overflow-y: unset;
@@ -850,12 +812,12 @@ nav li.active a
     }
 
     .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 38px;
-        font-size: 23px;
-        line-height: 38px;
+        right: 0.938rem;
+        bottom: 0.938rem;
+        height: 2.375rem;
+        width: 2.375rem;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
     }
 
     #sectionHome
@@ -899,15 +861,15 @@ nav li.active a
                 .scroll-down-arrow {
                     position: absolute;
                     z-index: 3;
-                    bottom: 68px;
+                    bottom: 4.25rem;
                     left: 50%;
-                    margin-left: -16px;
-                    width: 32px;
-                    height: 32px;
-                    line-height: 32px;
-                    font-size: 36px;
+                    margin-left: -1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    font-size: 2.25rem;
                     text-align: center;
-                    color: #fff !important;
+                    color: #fff;
                     top: 149%;
                 }
 
@@ -925,18 +887,18 @@ nav li.active a
                 
                 h2 
                 {
-                    font-size: calc(1.5rem + 11.7vw) !important;
+                    font-size: $sm-sec-heading-size;
                 }
 
                 p 
                 {
-                    top: 25px;
-                    font-size: 1.30rem !important;
+                    top: 26%;
+                    font-size: $sm-sec-para-size;
 
                     .header-bottom-line
                     {
-                        border: 2px solid #dc3545;
-                        width: 75px;
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
                         left: 39%;
                     }
                 }
@@ -954,17 +916,17 @@ nav li.active a
                 
                 h2 
                 {
-                    font-size: calc(1.5rem + 12.7vw) !important;
+                    font-size: $sm-sec-heading-size;
                 }
 
                 p 
                 {
-                    top: 28px;
-                    font-size: 1.30rem !important;
+                    top: 26%;
+                    font-size: $sm-sec-para-size;
 
                     .header-bottom-line
                     {
-                        border: 2px solid #dc3545;
+                        border: 2px solid $primary-color;
                         width: 75px;
                         left: 39%;
                     }
@@ -987,18 +949,18 @@ nav li.active a
                 
                 h2 
                 {
-                    font-size: calc(1.5rem + 11.7vw) !important;
+                    font-size: $sm-sec-heading-size;
                 }
 
                 p 
                 {
-                    top: 24px;
-                    font-size: 1.30rem !important;
+                    top: 26%;
+                    font-size: $sm-sec-para-size;
 
                     .header-bottom-line
                     {
-                        border: 2px solid #dc3545;
-                        width: 75px;
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
                         left: 39%;
                     }
                 }
@@ -1015,18 +977,256 @@ nav li.active a
                 
                 h2 
                 {
-                    font-size: calc(1.5rem + 11.7vw) !important;
+                    font-size: $sm-sec-heading-size;
                 }
                 p 
                 {
-                    top: 26px;
-                    font-size: 1.30rem !important;
+                    top: 26%;
+                    font-size: $sm-sec-para-size;
 
                     .header-bottom-line
                     {
-                        border: 2px solid #dc3545;
-                        width: 75px;
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
                         left: 39%;
+                    }
+                }
+            }
+        }
+    }
+
+    section
+    {
+        footer 
+        {
+            .copy-text
+            {
+                text-align: left;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px)
+{
+    body{
+        overflow-x: hidden;
+    }
+
+    .folio-text
+    {
+        font-size: 2.3rem;
+        font-weight: 700;
+        padding: 0px 0px 0px 6px;
+    }
+
+    #sidebarMenu
+    {
+        text-align: left;
+        width: 100%;
+        height: 28%;
+        overflow-y: unset;
+        overflow: unset;
+    }
+
+    .scroll-up-btn{
+        right: 0.938rem;
+        bottom: 0.938rem;
+        height: 2.375rem;
+        width: 2.375rem;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+    }
+
+    #sectionHome
+    {
+        .home
+        {
+
+            .nameSection
+            {
+                position: relative;
+                z-index: 2;
+                top: 19%;
+                margin: 0 9px;
+
+                .text1 p
+                {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $secprimary-text;
+                }
+
+                .text2 p
+                {
+                    font-size: 2.5rem;
+                    color: $secprimary-text;
+                    font-weight: 700;
+                }
+
+                .text3 p
+                {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $secprimary-text;
+
+                    span 
+                    {
+                        color: $primary-text;
+                    }
+                }
+
+                .scroll-down-arrow {
+                    position: absolute;
+                    z-index: 3;
+                    bottom: 4.25rem;
+                    left: 50%;
+                    margin-left: -1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    font-size: 2.25rem;
+                    text-align: center;
+                    color: #fff;
+                    top: 149%;
+                }
+
+            }
+        }
+
+    }
+
+    #sectionAboutme
+    {
+        .about-wrap
+        {
+            .fade-text
+            {
+                
+                h2 
+                {
+                    font-size: $sm-sec-heading-size;
+                }
+
+                p 
+                {
+                    font-size: $md-sec-para-size;
+
+                    .header-bottom-line
+                    {
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
+                        left: 45%;
+                    }
+                }
+            }
+
+            .card-count 
+            {
+                .card 
+                {
+                    .icon-setting 
+                    {
+                        .user-icon 
+                        {
+                            svg
+                            {
+            
+                                font-size: 40px;
+                                position: absolute;
+                                top: 30%;
+                                left: 46.5%;
+                                padding: 0px 0px 10px;
+            
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    #sectionWhatido
+    {
+        .whatido-wrap
+        {
+            .fade-text
+            {
+                
+                h2 
+                {
+                    font-size: $sm-sec-heading-size;
+                }
+
+                p 
+                {
+                    font-size: $md-sec-para-size;
+
+                    .header-bottom-line
+                    {
+                        border: 2px solid $primary-color;
+                        width: 75px;
+                        left: 45%;
+                    }
+                }
+            }
+        }
+
+        .respo-center
+        {
+            text-align: center;
+        }
+    }
+
+    #sectionResume
+    {
+        .resume-wrap
+        {
+            .fade-text
+            {
+                
+                h2 
+                {
+                    font-size: $sm-sec-heading-size;
+                }
+
+                p 
+                {
+                    font-size: $md-sec-para-size;
+
+                    .header-bottom-line
+                    {
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
+                        left: 45%;
+                    }
+                }
+            }
+        }
+    }
+
+    #sectionContact
+    {
+        .contact-wrap
+        {
+            .fade-text
+            {
+                
+                h2 
+                {
+                    font-size: $sm-sec-heading-size;
+                }
+                p 
+                {
+                    font-size: $md-sec-para-size;
+
+                    .header-bottom-line
+                    {
+                        border: 2px solid $primary-color;
+                        width: 4.688rem;
+                        left: 45%;
                     }
                 }
             }
